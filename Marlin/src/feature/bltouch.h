@@ -26,15 +26,15 @@
 // BLTouch commands are sent as servo angles
 typedef unsigned char BLTCommand;
 
-#define STOW_ALARM            true
-#define BLTOUCH_DEPLOY          10
+#define STOW_ALARM            false
+#define BLTOUCH_DEPLOY          35
 #define BLTOUCH_STOW            90
 #define BLTOUCH_SW_MODE         60
-#define BLTOUCH_SELFTEST       120
-#define BLTOUCH_MODE_STORE     130
-#define BLTOUCH_5V_MODE        140
-#define BLTOUCH_OD_MODE        150
-#define BLTOUCH_RESET          160
+#define BLTOUCH_SELFTEST       35
+#define BLTOUCH_MODE_STORE     35
+#define BLTOUCH_5V_MODE        35
+#define BLTOUCH_OD_MODE        35
+#define BLTOUCH_RESET          35
 
 /**
  * The following commands require different minimum delays.
