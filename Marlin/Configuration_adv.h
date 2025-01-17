@@ -651,9 +651,9 @@
  *   PWM on pin OC2A. Only use this option if you don't need PWM on 0C2A. (Check your schematic.)
  *   USE_OCR2A_AS_TOP sacrifices duty cycle control resolution to achieve this broader range of frequencies.
  */
-//#define FAST_PWM_FAN    // Increase the fan PWM frequency. Removes the PWM noise but increases heating in the FET/Arduino
+#define FAST_PWM_FAN    // Increase the fan PWM frequency. Removes the PWM noise but increases heating in the FET/Arduino
 #if ENABLED(FAST_PWM_FAN)
-  //#define FAST_PWM_FAN_FREQUENCY 31400  // Define here to override the defaults below
+  #define FAST_PWM_FAN_FREQUENCY 31400  // Define here to override the defaults below
   //#define USE_OCR2A_AS_TOP
   #ifndef FAST_PWM_FAN_FREQUENCY
     #ifdef __AVR__
@@ -755,8 +755,8 @@
 #if ENABLED(CASE_LIGHT_ENABLE)
   #define CASE_LIGHT_PIN PA3                  // Override the default pin if needed
   #define INVERT_CASE_LIGHT false             // Set true if Case Light is ON when pin is LOW
-  #define CASE_LIGHT_DEFAULT_ON true          // Set default power-up state on
-  #define CASE_LIGHT_DEFAULT_BRIGHTNESS 105   // Set default power-up brightness (0-255, requires PWM pin)
+  #define CASE_LIGHT_DEFAULT_ON false          // Set default power-up state on
+  #define CASE_LIGHT_DEFAULT_BRIGHTNESS 255   // Set default power-up brightness (0-255, requires PWM pin)
   //#define CASE_LIGHT_NO_BRIGHTNESS          // Disable brightness control. Enable for non-PWM lighting.
   //#define CASE_LIGHT_MAX_PWM 128            // Limit PWM duty cycle (0-255)
   #define CASE_LIGHT_MENU                   // Add Case Light options to the LCD menu
