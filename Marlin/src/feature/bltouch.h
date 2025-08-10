@@ -27,14 +27,14 @@
 typedef unsigned char BLTCommand;
 
 #define STOW_ALARM            false
-#define BLTOUCH_DEPLOY          35
-#define BLTOUCH_STOW            96
+#define BLTOUCH_DEPLOY          40
+#define BLTOUCH_STOW            104
 #define BLTOUCH_SW_MODE         60
-#define BLTOUCH_SELFTEST       35
-#define BLTOUCH_MODE_STORE     35
-#define BLTOUCH_5V_MODE        35
-#define BLTOUCH_OD_MODE        35
-#define BLTOUCH_RESET          35
+#define BLTOUCH_SELFTEST       40
+#define BLTOUCH_MODE_STORE     40
+#define BLTOUCH_5V_MODE        40
+#define BLTOUCH_OD_MODE        40
+#define BLTOUCH_RESET          40
 
 /**
  * The following commands require different minimum delays.
